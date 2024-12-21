@@ -49,8 +49,12 @@ body {
 .header .navigation ul li a {
   color: white; /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
+  transition-duration: 1000ms;
+  transition-property: background, transform;
 }
 
 .header .navigation ul li a:hover {
-  text-decoration: underline; /* Adds underline on hover */
+  background-color: white;
+  transform: rotate(45deg);
+  color: black;
 }
