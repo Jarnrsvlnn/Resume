@@ -11,13 +11,17 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   margin: 0;
   padding: 0;
 }
 
-.header {
-  background-color: rgba(0, 0, 0, 0.3);
+.upper-container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: black;
   display: flex;
   align-items: flex-end;
   justify-content: space-between; /* Space between name and navigation */
@@ -28,32 +32,45 @@ body {
   padding-right: 60px;
   opacity: 0.9;
   backdrop-filter: blur(8px);
-  box-shadow: 1px 3px 30px white;
+  box-shadow: 1px 3px 15px white;
   border-radius: 0px 0px 15px 15px;
 }
 
-.header .name h2 {
+.upper-container h2 {
   margin-bottom: 7px;
 }
 
-.header .navigation ul {
+.upper-container .navigation ul {
   list-style: none;
   display: flex; /* Makes navigation items inline */
   margin: 0;
   padding: 0;
 }
 
-.header .navigation ul li {
+.upper-container .navigation ul li {
   margin: 0 15px; /* Adds space between navigation items */
   margin-bottom: 7px;
 }
 
-.header .navigation ul li a {
+.upper-container .navigation ul li a {
   color: white; /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
   transition-duration: 500ms;
 }
 
-.header .navigation ul li a:hover {
+.upper-container .navigation ul li a:hover {
   font-size: 20px;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  background: grey;
+  margin-top: 90px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: black;
+  opacity: 0.9;
+  box-shadow: 1px 3px 10px white;
+  height: 5000px;
+  border-radius: 15px 15px 15px 15px;
 }
