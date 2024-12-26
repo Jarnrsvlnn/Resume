@@ -4,9 +4,8 @@ body {
   margin: 0;
   padding: 0;
 }
-font-face .upper-container h2 {
-  font-family: myFont;
-  src: url(air.ttf);
+*{
+  font-family: "consolas", sans-serif;
 }
 body {
   font-family: Papyrus, fantasy;
@@ -80,11 +79,21 @@ body {
 .body-container .sidebar-about {
   position: fixed;
   top: 190px;
-  left: 250px;
+  left: 210px;
 }
 
-.body-container .sidebar-about ul li {
+.body-container .sidebar-about ul li a{
   list-style-type: none;
+  text-decoration: none;
+  font-family: "consolas", sans-serif;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: inherit;
+}
+
+.body-container .sidebar-about ul li{
+  list-style-type: none;
+  text-decoration: none;
   font-family: "consolas", sans-serif;
   padding-bottom: 15px;
   font-size: 20px;
@@ -95,7 +104,7 @@ body {
   font-family: "consolas", sans-serif;
   font-weight: bold;
   font-size: 68px;
-  left: 50%;
+  padding-right: 100px;
 }
 
 .body-container .about-logos {
@@ -121,4 +130,58 @@ body {
   width: 13px; 
   padding-top: 10px;
   height: 13px;
+}
+.body-container .intro-container {
+  display: flex;
+  padding: 5px;
+  margin: 5px
+}
+.body-container .intro-container img{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 29%;
+  left: 33%;
+  border-radius: 20px;
+}
+
+.body-container .intro-container #intro {
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  top: 1px;
+  left: 15px;
+}
+
+.body-container .intro-container .name {
+  position: absolute;
+  font-weight:lighter;
+  font-size: 30px;
+  top: 240px;
+  left: 970px;
+}
+
+.body-container .intro-container .status {
+  position: absolute;
+  font-size: 15px;
+  top: 290px;
+  left: 975px;
+}
+
+.body-container .intro-container .bio {
+  position: absolute;
+  font-size: 15px;
+  top: 350px;
+  left: 975px;
+  text-align: justify;
+  width: 600px;
+}
+
+.body-container .intro-container .personal-details {
+  position: absolute;
+  font-size: 15px;
+  top: 68%;
+  left: 34%;
+  text-align: justify;
+  width: 600px;
 }
