@@ -71,7 +71,6 @@ body {
   margin-left: 600px;
   margin-right: 200px;
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
   height: 5000px;
   border-radius: 15px 15px 15px 15px;
 }
@@ -142,7 +141,7 @@ body {
   position: absolute;
   top: 29%;
   left: 33%;
-  border-radius: 20px;
+  border-radius: 1000px;
 }
 
 .body-container .intro-container #intro {
@@ -177,13 +176,24 @@ body {
   width: 600px;
 }
 
-.body-container .intro-container .personal-details {
+.body-container .intro-container .personal-details{
   position: absolute;
   font-size: 15px;
   top: 68%;
   left: 34%;
   text-align: justify;
   width: 600px;
+}
+
+.body-container .intro-container .personal-details .personal-information {
+  position: absolute;
+  font-weight: 1;
+  font-size: 15px;
+  top: 18%;
+  left: 20%;
+  text-align: justify;
+  width: 600px;
+  line-height: 22px;
 }
 
 .body-container .intro-container .interests {
@@ -204,8 +214,8 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
-  transform: translateY(14px);
-  left: 10px;
+  transform: translateY(60px);
+  left: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -217,8 +227,8 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
-  transform: translateY(14px);
-  left: 20px;
+  transform: translateY(60px);
+  left: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -232,42 +242,55 @@ body {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  transform: translateY(14px);
-  left: 30px;
+  transform: translateY(60px);
+  left: 110px;
 }
 .body-container .intro-container .interests .gaming img{
   position: relative;
   display: flex;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
-  border-radius: 30px;
-  transform: translateY(14px);
-  left: 10px;
-  justify-content: center;
-  align-items: center;
+  width: 100px;
+  height: 90px;
+  top: 3px;
+  left: 29px;
 }
 .body-container .intro-container .interests .music img{
   position: relative;
   width: 60px;
   display: flex;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
-  border-radius: 30px;
-  transform: translateY(14px);
-  left: 20px;
-  justify-content: center;
-  align-items: center;
+  left: 31px;
+  top: 3px;
 }
 .body-container .intro-container .interests .manga img{
+  position: relative;
+  width: 150px;
+  display: flex;
+  height: 150px;
+  top: 3px;
+  left: 22px;
+}
+
+.body-container .intro-container .interests .gaming p{
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 90px;
+  top: 110px;
+  transform: translateX(-50px);
+}
+.body-container .intro-container .interests .music p{
   position: relative;
   width: 60px;
   display: flex;
   height: 60px;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(14px);
-  left: 30px;
+  top: 95px;
+  transform: translateX(-20px);
+}
+.body-container .intro-container .interests .manga p{
+  position: relative;
+  width: 150px;
+  display: flex;
+  height: 150px;
+  top: 140px;
+  transform: translateX(-75px);
 }
