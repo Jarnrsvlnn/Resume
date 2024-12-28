@@ -70,9 +70,9 @@ body {
   margin-top: 90px;
   margin-left: 600px;
   margin-right: 200px;
-  background-color: rgba(0, 0, 0, 0.1);
   height: 5000px;
   border-radius: 15px 15px 15px 15px;
+  background-color: rgba(128, 128, 128, 0.041);
 }
 
 .body-container .sidebar-about {
@@ -130,6 +130,7 @@ body {
   padding-top: 10px;
   height: 13px;
 }
+
 .body-container .intro-container {
   display: flex;
   padding: 5px;
@@ -217,7 +218,7 @@ body {
   position: absolute;
   font-size: 30px;
   top: 1px;
-  transform: translateX(45px);
+  transform: translateX(95px);
   text-align: justify;
   width: 600px;
   padding-bottom: 20px;
@@ -232,7 +233,7 @@ body {
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
   transform: translateY(140px);
-  left: 50px;
+  left: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -245,7 +246,7 @@ body {
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
   transform: translateY(140px);
-  left: 80px;
+  left: 130px;
   justify-content: center;
   align-items: center;
 }
@@ -260,7 +261,7 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateY(140px);
-  left: 110px;
+  left: 160px;
 }
 .body-container .intro-container .interests .gaming img {
   position: relative;
@@ -310,4 +311,63 @@ body {
   height: 150px;
   top: 140px;
   transform: translateX(-75px);
+}
+
+/*skills*/
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 1000px;
+  width: 1010px;
+  height: 650px;
+}
+
+.skills-container #skills {
+  position: relative;
+  display: flex;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.skills-container .programming {
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.051);
+  border-radius: 15px;
+  top: 50px;
+  left: -80px;
+  width: 510px;
+  height: 550px;
+}
+.skills-container .programming h3 {
+  text-align: center;
+  text-align-last: center;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  top: 30px;
+}
+
+.skills-container .graphic h3 {
+  text-align: center;
+  text-align-last: center;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  top: 35px;
+}
+
+.skills-container .graphic {
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.051);
+  border-radius: 15px;
+  top: 50px;
+  width: 510px;
+  height: 550px;
+  right: 40px;
 }
