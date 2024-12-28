@@ -9,7 +9,7 @@ body {
 }
 body {
   font-family: Papyrus, fantasy;
-  background-image: url("moon.gif");
+  background-image: url("pictures/moon.gif");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
   display: flex;
   gap: 55px;
   padding-top: 290px;
-  padding-left: 1px;
+  transform: translateX(-87px); 
 }
 
 .body-container .about-logos .facebook img{
@@ -150,7 +150,7 @@ body {
   font-weight: bold;
   font-size: 25px;
   top: 1px;
-  left: 15px;
+  transform: translateX(-410px);
 }
 
 .body-container .intro-container .name {
@@ -184,4 +184,90 @@ body {
   left: 34%;
   text-align: justify;
   width: 600px;
+}
+
+.body-container .intro-container .interests {
+  position: absolute;
+  display: flex;
+  height: 150px;
+  width: 400px;
+  top: 660px;
+
+}
+
+
+.body-container .intro-container .interests .gaming {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px white;
+  border-radius: 30px;
+  transform: translateY(14px);
+  left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.body-container .intro-container .interests .music {
+  position: relative;
+  width: 120px;
+  display: flex;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px white;
+  border-radius: 30px;
+  transform: translateY(14px);
+  left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.body-container .intro-container .interests .manga {
+  position: relative;
+  width: 120px;
+  display: flex;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px white;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(14px);
+  left: 30px;
+}
+.body-container .intro-container .interests .gaming img{
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px white;
+  border-radius: 30px;
+  transform: translateY(14px);
+  left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.body-container .intro-container .interests .music img{
+  position: relative;
+  width: 60px;
+  display: flex;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px white;
+  border-radius: 30px;
+  transform: translateY(14px);
+  left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.body-container .intro-container .interests .manga img{
+  position: relative;
+  width: 60px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(14px);
+  left: 30px;
 }
