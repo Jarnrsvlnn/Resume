@@ -176,10 +176,19 @@ body {
   width: 600px;
 }
 
+.body-container .intro-container .personal-details h3 {
+  position: absolute;
+  font-size: 30px;
+  bottom: 130px;
+  text-align: justify;
+  width: 600px;
+  padding-bottom: 50px;
+}
+
 .body-container .intro-container .personal-details {
   position: absolute;
   font-size: 15px;
-  top: 68%;
+  top: 80%;
   left: 34%;
   text-align: justify;
   width: 600px;
@@ -189,11 +198,11 @@ body {
   position: absolute;
   font-weight: 1;
   font-size: 15px;
-  top: 18%;
+  transform: translateY(-178px);
   left: 20%;
   text-align: justify;
   width: 600px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 .body-container .intro-container .interests {
@@ -204,6 +213,16 @@ body {
   top: 660px;
 }
 
+.body-container .intro-container .interests h3 {
+  position: absolute;
+  font-size: 30px;
+  top: 1px;
+  transform: translateX(45px);
+  text-align: justify;
+  width: 600px;
+  padding-bottom: 20px;
+}
+
 .body-container .intro-container .interests .gaming {
   position: relative;
   display: flex;
@@ -212,7 +231,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
-  transform: translateY(60px);
+  transform: translateY(140px);
   left: 50px;
   justify-content: center;
   align-items: center;
@@ -225,7 +244,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 10px white;
   border-radius: 30px;
-  transform: translateY(60px);
+  transform: translateY(140px);
   left: 80px;
   justify-content: center;
   align-items: center;
@@ -240,7 +259,7 @@ body {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  transform: translateY(60px);
+  transform: translateY(140px);
   left: 110px;
 }
 .body-container .intro-container .interests .gaming img {
