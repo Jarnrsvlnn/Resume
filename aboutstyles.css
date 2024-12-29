@@ -352,6 +352,60 @@ body {
   top: 30px;
 }
 
+.skills-container .programming .proginfo {
+  position: absolute;
+  display: flex;
+  top: 180px;
+  left: 30px;
+  text-align: justify;
+  height: 300px;
+  width: 400px;
+  font-size: 16px;
+}
+
+.skills-container .programming .tools {
+  position: absolute;
+  display: flex;
+  top: 370px;
+  left: 195px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.skills-container .programming ul {
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  top: 430px;
+  left: 9px;
+}
+
+.skills-container .programming .python img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .programming .html img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .programming .css img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .programming .java img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .programming .csharp img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .programming .cplus img {
+  width: 50px;
+  height: 50px;
+}
+
 .skills-container .graphic h3 {
   text-align: center;
   text-align-last: center;
@@ -359,6 +413,48 @@ body {
   position: relative;
   display: flex;
   top: 35px;
+}
+
+.skills-container .graphic .graphinfo {
+  position: absolute;
+  display: flex;
+  top: 180px;
+  left: 30px;
+  text-align: justify;
+  font-size: 15px;
+  height: 300px;
+  width: 400px;
+}
+
+.skills-container .graphic .tools {
+  position: absolute;
+  display: flex;
+  top: 370px;
+  left: 195px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.skills-container .graphic ul {
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  top: 430px;
+  left: 100px;
+}
+
+.skills-container .graphic .photoshop img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .graphic .canva img {
+  width: 50px;
+  height: 50px;
+}
+.skills-container .graphic .picsart img {
+  width: 50px;
+  height: 50px;
 }
 
 .skills-container .graphic {
