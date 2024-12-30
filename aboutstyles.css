@@ -71,15 +71,34 @@ body {
   margin-top: 90px;
   margin-left: 600px;
   margin-right: 200px;
-  height: 5000px;
+  height: 3050px;
   border-radius: 15px 15px 15px 15px;
   background-color: rgba(128, 128, 128, 0.041);
 }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+} 
 
 .body-container .sidebar-about {
   position: fixed;
   top: 190px;
   left: 210px;
+  animation: fadeInLeft 2s ease-out;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .body-container .sidebar-about ul li a {
@@ -105,6 +124,7 @@ body {
   font-weight: bold;
   font-size: 68px;
   padding-right: 100px;
+  animation: fadeInLeft 0.4s ease;
 }
 
 .body-container .about-logos {
@@ -117,19 +137,42 @@ body {
 .body-container .about-logos .facebook img {
   width: 20px;
   height: 20px;
+  transition: width 0.5s, height 0.5s;
 }
+.body-container .about-logos .facebook img:hover {
+  width: 30px;
+  height: 30px;
+}
+
 .body-container .about-logos .github img {
   width: 30px;
   height: 30px;
+  transition: width 0.5s, height 0.5s;
 }
+.body-container .about-logos .github img:hover {
+  width: 40px;
+  height: 40px;
+}
+
 .body-container .about-logos .linkedin img {
   width: 30px;
   height: 30px;
+  transition: width 0.5s, height 0.5s;
 }
+.body-container .about-logos .linkedin img:hover {
+  width: 40px;
+  height: 40px;
+}
+
 .body-container .about-logos .google img {
   width: 13px;
   padding-top: 10px;
   height: 13px;
+  transition: width 0.5s, height 0.5s;
+}
+.body-container .about-logos .google img:hover {
+  width: 23px;
+  height: 23px;
 }
 
 .body-container .intro-container {
@@ -238,6 +281,11 @@ body {
   left: 100px;
   justify-content: center;
   align-items: center;
+  transition: width 0.5s, height 0.5s;
+}
+.body-container .intro-container .interests .gaming:hover {
+  width: 130px;
+  height: 130px;
 }
 .body-container .intro-container .interests .music {
   position: relative;
@@ -251,6 +299,11 @@ body {
   left: 130px;
   justify-content: center;
   align-items: center;
+  transition: width 0.5s, height 0.5s;
+}
+.body-container .intro-container .interests .music:hover {
+  width: 130px;
+  height: 130px;
 }
 .body-container .intro-container .interests .manga {
   position: relative;
@@ -264,6 +317,11 @@ body {
   align-items: center;
   transform: translateY(140px);
   left: 160px;
+  transition: width 0.5s, height 0.5s;
+}
+.body-container .intro-container .interests .manga:hover {
+  width: 130px;
+  height: 130px;
 }
 .body-container .intro-container .interests .gaming img {
   position: relative;
@@ -344,6 +402,12 @@ body {
   left: -80px;
   width: 510px;
   height: 550px;
+  transition: width 0.5s, height 0.5s, border 0.4s;
+}
+.skills-container .programming:hover {
+  width: 515px;
+  height: 555px;
+  border: rgb(107, 107, 107) 1px solid;
 }
 .skills-container .programming h3 {
   text-align: center;
@@ -468,6 +532,12 @@ body {
   width: 540px;
   height: 550px;
   right: 40px;
+  transition: width 0.5s, height 0.5s, border 0.4s;
+}
+.skills-container .graphic:hover {
+  width: 550px;
+  height: 560px;
+  border: rgb(107, 107, 107) 1px solid;
 }
 
 /*education*/
@@ -480,6 +550,7 @@ body {
   margin-bottom: 50px;
   left: 48px;
 }
+
 .educ-container {
   display: flex;
   flex-direction: column;
@@ -500,11 +571,62 @@ body {
   position: relative;
   right: 10px;
 }
+.elementary .spes-background {
+  position: relative;
+  width: 700px;     
+  display:inline-block;
+  text-align: justify;
+  font-size: 15px;
+  bottom: 40px;
+}
+.elementary .sub-header {
+  position: relative;
+  font-weight: 600;
+  font-size: 19px;
+  bottom: 15px;
+}
+.elementary .school-info {
+  font-weight: lighter;
+}
+.elementary .school-address {
+  position: relative;
+  opacity: 0.5;
+  bottom: 30px;
+}
+.educ-container .schools .tertiary {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
+}
+.tertiary .ga-background {
+  position: relative;
+  width: 700px;     
+  display:inline-block;
+  text-align: justify;
+  font-size: 15px;
+  bottom: 40px;
+}
 .tertiary img {
   width: 300px;
   height: 300px;
   position: relative;
   right: 10px;
+}
+.tertiary .sub-header {
+  position: relative;
+  font-weight: 600;
+  font-size: 19px;
+  bottom: 15px;
+}
+.tertiary .school-address {
+  position: relative;
+  opacity: 0.5;
+  bottom: 30px;
+}
+.educ-container .schools .secondary {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
 }
 .secondary img {
   width: 370px;
@@ -513,6 +635,31 @@ body {
   right: 50px;
   bottom: 30px;
 }
+.secondary .gshs-background {
+  position: absolute;
+  width: 700px;     
+  display:inline-block;
+  text-align: justify;
+  font-size: 15px;
+  bottom: 85px;
+  right: 90px;
+}
+.secondary .sub-header {
+  position: relative;
+  font-weight: 600;
+  font-size: 19px;
+  bottom: 15px;
+}
+.secondary .school-address {
+  position: relative;
+  opacity: 0.5;
+  bottom: 30px;
+}
+.educ-container .schools .college {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
+}
 .college img {
   width: 300px;
   height: 300px;
@@ -520,20 +667,22 @@ body {
   right: 10px;
   bottom: 30px;
 }
-
-.educ-container .schools .tertiary {
+.college .adu-background {
   position: relative;
-  padding-bottom: 15px;
-  left: 40px;
+  width: 700px;     
+  display:inline-block;
+  text-align: justify;
+  font-size: 15px;
+  bottom: 48px;
 }
-
-.educ-container .schools .secondary {
+.college .sub-header {
   position: relative;
-  padding-bottom: 15px;
-  left: 40px;
+  font-weight: 600;
+  font-size: 19px;
+  bottom: 15px;
 }
-.educ-container .schools .college {
+.college .school-address {
   position: relative;
-  padding-bottom: 15px;
-  left: 40px;
+  opacity: 0.5;
+  bottom: 30px;
 }
