@@ -137,13 +137,14 @@ body {
   padding: 5px;
   margin: 5px;
 }
-.body-container .intro-container img {
+.body-container .intro-container .profile {
   height: 300px;
   width: 300px;
   position: absolute;
-  top: 29%;
+  top: 23%;
   left: 33%;
   border-radius: 1000px;
+  border: rgb(255, 255, 255) 3px solid;
 }
 
 .body-container .intro-container #intro {
@@ -156,7 +157,7 @@ body {
 
 .body-container .intro-container .name {
   position: absolute;
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: 30px;
   top: 240px;
   left: 970px;
@@ -331,7 +332,7 @@ body {
   margin-top: 0px;
   font-weight: bold;
   font-size: 25px;
-  margin-bottom: 20px; /* Space below the title */
+  margin-bottom: 20px;
 }
 
 .skills-container .programming {
@@ -420,7 +421,7 @@ body {
   position: absolute;
   display: flex;
   top: 180px;
-  left: 30px;
+  left: 35px;
   text-align: justify;
   font-size: 15px;
   height: 300px;
@@ -464,24 +465,75 @@ body {
   background-color: rgba(255, 255, 255, 0.051);
   border-radius: 15px;
   top: 50px;
-  width: 510px;
+  width: 540px;
   height: 550px;
   right: 40px;
 }
 
 /*education*/
+.educ-container .title {
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  top: bottom: 200px;
+  font-size: 25px;
+  margin-bottom: 50px;
+  left: 48px;
+}
 .educ-container {
   display: flex;
   flex-direction: column;
   height: 1000px;
-  width: 1000px;
-  top: 1700px;
+  width: 1100px;
+  top: 1660px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.051);
-  box-shadow: 1px 3px 10px white;
 }
 
 .educ-container .schools .elementary {
-  background-color: rgba(255, 255, 255, 0.051);
-  padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
+}
+.elementary img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 10px;
+}
+.tertiary img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 10px;
+}
+.secondary img {
+  width: 370px;
+  height: 370px;
+  position: relative;
+  right: 50px;
+  bottom: 30px;
+}
+.college img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 10px;
+  bottom: 30px;
+}
+
+.educ-container .schools .tertiary {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
+}
+
+.educ-container .schools .secondary {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
+}
+.educ-container .schools .college {
+  position: relative;
+  padding-bottom: 15px;
+  left: 40px;
 }
