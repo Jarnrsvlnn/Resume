@@ -3,6 +3,7 @@ body {
   height: 100%; /* Make sure both html and body take up the full height of the viewport */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 * {
   font-family: "consolas", sans-serif;
@@ -20,7 +21,8 @@ body {
 }
 
 .upper-container {
-  position: sticky;
+  position: fixed;
+  width: 1400px;
   top: 0;
   z-index: 999;
   background-color: black;
@@ -55,13 +57,13 @@ body {
 }
 
 .upper-container .navigation ul li a {
-  color: white; /* Makes link text white */
+  color: rgb(95, 95, 95); /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
   transition-duration: 500ms;
 }
 
-.upper-container .navigation ul li a:hover {
-  font-size: 20px;
+.upper-container .navigation ul li a:active {
+  color: white;
 }
 
 .body-container {
@@ -70,7 +72,7 @@ body {
   margin-top: 90px;
   margin-left: 600px;
   margin-right: 200px;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 5000px;
+  height: 3050px;
   border-radius: 15px 15px 15px 15px;
+  background-color: rgba(128, 128, 128, 0.041);
 }

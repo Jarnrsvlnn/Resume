@@ -3,6 +3,7 @@ body {
   height: 100%; /* Make sure both html and body take up the full height of the viewport */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 * {
   font-family: "consolas", sans-serif;
@@ -56,13 +57,13 @@ body {
 }
 
 .upper-container .navigation ul li a {
-  color: white; /* Makes link text white */
+  color: rgb(95, 95, 95); /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
-  transition-duration: 500ms;
+  transition: color 0.1s;
 }
 
-.upper-container .navigation ul li a:hover {
-  font-size: 20px;
+.upper-container .navigation ul li a.active {
+  color: white;
 }
 
 .body-container {
@@ -188,6 +189,7 @@ body {
   left: 33%;
   border-radius: 1000px;
   border: rgb(255, 255, 255) 3px solid;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container #intro {
@@ -195,7 +197,8 @@ body {
   font-weight: bold;
   font-size: 25px;
   top: 1px;
-  transform: translateX(-410px);
+  left: -420px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .name {
@@ -204,6 +207,7 @@ body {
   font-size: 30px;
   top: 240px;
   left: 970px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .status {
@@ -211,6 +215,7 @@ body {
   font-size: 15px;
   top: 290px;
   left: 975px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .bio {
@@ -220,6 +225,7 @@ body {
   left: 975px;
   text-align: justify;
   width: 600px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .personal-details h3 {
@@ -229,6 +235,7 @@ body {
   text-align: justify;
   width: 600px;
   padding-bottom: 50px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .personal-details {
@@ -238,17 +245,19 @@ body {
   left: 34%;
   text-align: justify;
   width: 600px;
+  animation: slideUp 2.8s ease;
 }
 
 .body-container .intro-container .personal-details .personal-information {
   position: absolute;
   font-weight: 1;
   font-size: 15px;
-  transform: translateY(-178px);
+  bottom: -1px;
   left: 20%;
   text-align: justify;
   width: 600px;
   line-height: 18px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .interests {
@@ -257,16 +266,18 @@ body {
   height: 150px;
   width: 400px;
   top: 660px;
+  animation: slideUp 1.8s ease;
 }
 
 .body-container .intro-container .interests h3 {
   position: absolute;
   font-size: 30px;
   top: 1px;
-  transform: translateX(95px);
+  left: 100px;
   text-align: justify;
   width: 600px;
   padding-bottom: 20px;
+  animation: slideUp 1.5s ease;
 }
 
 .body-container .intro-container .interests .gaming {
@@ -382,6 +393,7 @@ body {
   top: 1000px;
   width: 1010px;
   height: 650px;
+  animation: slideUp 1.8s ease;
 }
 
 .skills-container #skills {
@@ -558,12 +570,17 @@ body {
   width: 1100px;
   top: 1660px;
   position: absolute;
+  animation: slideUp 1.8s ease;
 }
 
 .educ-container .schools .elementary {
   position: relative;
   padding-bottom: 15px;
   left: 40px;
+  transition: left 0.5s;
+}
+.educ-container .schools .elementary:hover {
+  left: 60px;
 }
 .elementary img {
   width: 300px;
@@ -597,6 +614,10 @@ body {
   position: relative;
   padding-bottom: 15px;
   left: 40px;
+  transition: left 0.5s;
+}
+.educ-container .schools .tertiary:hover {
+  left: 60px;
 }
 .tertiary .ga-background {
   position: relative;
@@ -605,6 +626,7 @@ body {
   text-align: justify;
   font-size: 15px;
   bottom: 40px;
+  transition: left 0.5s, background-color 0.5s;
 }
 .tertiary img {
   width: 300px;
@@ -627,6 +649,10 @@ body {
   position: relative;
   padding-bottom: 15px;
   left: 40px;
+  transition: left 0.5s;
+}
+.educ-container .schools .secondary:hover {
+  left: 60px;
 }
 .secondary img {
   width: 370px;
@@ -659,6 +685,10 @@ body {
   position: relative;
   padding-bottom: 15px;
   left: 40px;
+  transition: left 0.5s;
+}
+.educ-container .schools .college:hover {
+  left: 60px;
 }
 .college img {
   width: 300px;
