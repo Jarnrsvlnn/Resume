@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 * {
   font-family: "consolas", sans-serif;
@@ -85,6 +86,16 @@ body {
     opacity: 1;
   }
 } 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
 
 .body-container .sidebar-about {
   position: fixed;
@@ -190,6 +201,7 @@ body {
   border-radius: 1000px;
   border: rgb(255, 255, 255) 3px solid;
   animation: slideUp 1.8s ease;
+  transition: 
 }
 
 .body-container .intro-container #intro {
@@ -394,6 +406,9 @@ body {
   width: 1010px;
   height: 650px;
   animation: slideUp 1.8s ease;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .skills-container #skills {
@@ -571,6 +586,9 @@ body {
   top: 1660px;
   position: absolute;
   animation: slideUp 1.8s ease;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .educ-container .schools .elementary {
