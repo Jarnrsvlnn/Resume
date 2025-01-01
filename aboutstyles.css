@@ -123,6 +123,11 @@ body {
   animation: fadeInLeft 2s ease-out forwards;
   animation-delay: 0.7s;
   opacity: 0;
+  transition: font-size 0.5s;
+}
+
+.body-container .sidebar-about ul li a:hover {
+  font-size: 23px;
 }
 
 .body-container .sidebar-about ul li {
@@ -447,6 +452,9 @@ body {
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 20px;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .skills-container .programming {
@@ -459,6 +467,9 @@ body {
   width: 510px;
   height: 550px;
   transition: width 0.5s, height 0.5s, border 0.4s;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 .skills-container .programming:hover {
   width: 515px;
@@ -593,6 +604,9 @@ body {
   height: 550px;
   right: 40px;
   transition: width 0.5s, height 0.5s, border 0.4s;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 .skills-container .graphic:hover {
   width: 550px;
