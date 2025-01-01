@@ -82,6 +82,36 @@ body {
     transform: translateX(0px);
   }
 }
+@keyframes slideRight {
+  0% {
+    opacity: 0.1;
+    transform: translateX(280px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0.1;
+    transform: translateY(130px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes usernameY {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .body-container .username {
   display: flex;
   position: absolute;
@@ -90,7 +120,7 @@ body {
   font-size: 50px;
   font-weight: 500;
   color: rgba(255, 255, 0, 0.808);
-  animation: slideLeft 0.5s ease-in;
+  animation: usernameY 2s ease-out;
 }
 .body-container .username span {
   color: rgb(255, 255, 255);
@@ -101,9 +131,10 @@ body {
   top: 230px;
   left: 5px;
   letter-spacing: 1px;
-  opacity: 0.6;
+  opacity: 0;
   color: yellow;
-  animation: slideLeft 2s ease-out;
+  animation: slideLeft 2s ease forwards;
+  animation-delay: 0.7s;
 }
 .body-container .position {
   display: flex;
@@ -111,9 +142,11 @@ body {
   top: 200px;
   width: 5000px;
   font-size: 100px;
+  opacity: 0;
   font-weight: 1;
   color: white;
-  animation: slideLeft 2s ease-out;
+  animation: slideLeft 2s ease forwards;
+  animation-delay: 0.7s;
 }
 .body-container .position span {
   position: relative;
@@ -121,9 +154,11 @@ body {
   width: 1000px;
   right: 545px;
   font-size: inherit;
+  opacity: 0;
   font-weight: inherit;
   color: rgba(255, 255, 0, 0.808);
-  animation: slideLeft 2s ease-out;
+  animation: slideRight 2s ease forwards;
+  animation-delay: 0.6s;
 }
 .body-container .sub-description {
   display: flex;
@@ -133,7 +168,8 @@ body {
   font-size: px;
   font-weight: 1;
   letter-spacing: 1px;
-  opacity: 0.8;
+  opacity: 0;
   color: rgb(255, 255, 255);
-  animation: slideLeft 2s ease-out;
+  animation: slideUp 2s ease forwards;
+  animation-delay: 0.7s;
 }

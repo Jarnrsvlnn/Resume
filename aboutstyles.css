@@ -120,6 +120,9 @@ body {
   padding-bottom: 15px;
   font-size: 20px;
   color: inherit;
+  animation: fadeInLeft 2s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
 }
 
 .body-container .sidebar-about ul li {
@@ -132,11 +135,12 @@ body {
 
 .body-container .sidebar-about h1 {
   position: sticky;
+  color: rgb(189, 189, 0);
   font-family: "consolas", sans-serif;
   font-weight: bold;
   font-size: 68px;
   padding-right: 100px;
-  animation: fadeInLeft 0.4s ease;
+  animation: fadeInLeft 0.1s ease;
 }
 
 .body-container .about-logos {
@@ -144,6 +148,9 @@ body {
   gap: 55px;
   padding-top: 290px;
   transform: translateX(-87px);
+  animation: fadeInLeft 2s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
 }
 
 .body-container .about-logos .facebook img {
@@ -200,8 +207,9 @@ body {
   left: 33%;
   border-radius: 1000px;
   border: rgb(255, 255, 255) 3px solid;
-  animation: slideUp 1.8s ease;
-  transition: 
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 .body-container .intro-container #intro {
@@ -210,7 +218,9 @@ body {
   font-size: 25px;
   top: 1px;
   left: -420px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 .body-container .intro-container .name {
@@ -219,7 +229,10 @@ body {
   font-size: 30px;
   top: 240px;
   left: 970px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+  color: rgb(189, 189, 0);
 }
 
 .body-container .intro-container .status {
@@ -227,7 +240,9 @@ body {
   font-size: 15px;
   top: 290px;
   left: 975px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .body-container .intro-container .bio {
@@ -237,7 +252,9 @@ body {
   left: 975px;
   text-align: justify;
   width: 600px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .body-container .intro-container .personal-details h3 {
@@ -247,7 +264,10 @@ body {
   text-align: justify;
   width: 600px;
   padding-bottom: 50px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+  color: rgb(189, 189, 0);
 }
 
 .body-container .intro-container .personal-details {
@@ -257,7 +277,9 @@ body {
   left: 34%;
   text-align: justify;
   width: 600px;
-  animation: slideUp 2.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .body-container .intro-container .personal-details .personal-information {
@@ -269,7 +291,9 @@ body {
   text-align: justify;
   width: 600px;
   line-height: 18px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .body-container .intro-container .interests {
@@ -278,18 +302,23 @@ body {
   height: 150px;
   width: 400px;
   top: 660px;
-  animation: slideUp 1.8s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 .body-container .intro-container .interests h3 {
   position: absolute;
+  color: rgb(189, 189, 0);
   font-size: 30px;
   top: 1px;
   left: 100px;
   text-align: justify;
   width: 600px;
   padding-bottom: 20px;
-  animation: slideUp 1.5s ease;
+  animation: slideUp 1.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 .body-container .intro-container .interests .gaming {
@@ -443,6 +472,7 @@ body {
   position: relative;
   display: flex;
   top: 30px;
+  color: rgb(189, 189, 0);
 }
 
 .skills-container .programming .proginfo {
@@ -463,6 +493,7 @@ body {
   left: 195px;
   font-weight: bold;
   font-size: 25px;
+  color: rgb(189, 189, 0);
 }
 
 .skills-container .programming ul {
@@ -506,6 +537,7 @@ body {
   position: relative;
   display: flex;
   top: 35px;
+  color: rgb(189, 189, 0);
 }
 
 .skills-container .graphic .graphinfo {
@@ -526,6 +558,7 @@ body {
   left: 195px;
   font-weight: bold;
   font-size: 25px;
+  color: rgb(189, 189, 0);
 }
 
 .skills-container .graphic ul {
@@ -618,6 +651,7 @@ body {
   position: relative;
   font-weight: 600;
   font-size: 19px;
+  color: rgb(189, 189, 0);
   bottom: 15px;
 }
 .elementary .school-info {
@@ -627,6 +661,7 @@ body {
   position: relative;
   opacity: 0.5;
   bottom: 30px;
+  color: rgb(189, 189, 0);
 }
 .educ-container .schools .tertiary {
   position: relative;
@@ -657,11 +692,13 @@ body {
   font-weight: 600;
   font-size: 19px;
   bottom: 15px;
+  color: rgb(189, 189, 0);
 }
 .tertiary .school-address {
   position: relative;
   opacity: 0.5;
   bottom: 30px;
+  color: rgb(189, 189, 0);
 }
 .educ-container .schools .secondary {
   position: relative;
@@ -693,11 +730,13 @@ body {
   font-weight: 600;
   font-size: 19px;
   bottom: 15px;
+  color: rgb(189, 189, 0);
 }
 .secondary .school-address {
   position: relative;
   opacity: 0.5;
   bottom: 30px;
+  color: rgb(189, 189, 0);
 }
 .educ-container .schools .college {
   position: relative;
@@ -728,9 +767,11 @@ body {
   font-weight: 600;
   font-size: 19px;
   bottom: 15px;
+  color: rgb(189, 189, 0);
 }
 .college .school-address {
   position: relative;
   opacity: 0.5;
   bottom: 30px;
+  color: rgb(189, 189, 0);
 }
