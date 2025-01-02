@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 html,
 body {
   height: 100%; /* Make sure both html and body take up the full height of the viewport */
@@ -6,7 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 * {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono";
 }
 body {
   background-image: url("pictures/moon.gif");
@@ -76,6 +78,9 @@ body {
 .body-container .title-container {
   display: flex;
   position: relative;
+  width: 1700px;
+  margin-left: -100px;
+  margin-right: -100px;
 }
 
 .body-container .title-container h1 {
@@ -89,7 +94,73 @@ body {
   position: relative;
   font-size: 17px;
   color: rgb(184, 184, 0);
-  top: 75px;
-  right: 217px;
+  top: 86px;
+  right: 237px;
   opacity: 0.8;
+}
+.body-container .highlighted-project {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  top: 140px;
+  background-color: rgba(128, 128, 128, 0.041);
+  width: 1510px;
+  height: 350px;
+  border-radius: 20px;
+}
+.body-container .highlighted-project .info-container {
+  display: flex;
+  position: absolute;
+  left: 445px;
+  width: 1065px;
+  height: 350px;
+}
+.body-container .highlighted-project .info-container h2 {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  top: -7px;
+}
+.body-container .highlighted-project .info-container .genre {
+  display: flex;
+  position: absolute;
+  top: 45px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: rgb(184, 184, 0);
+  font-size: 14px;
+}
+.body-container .highlighted-project .info-container .description {
+  display: flex;
+  position: absolute;
+  top: 90px;
+  text-align: justify;
+  margin-right: 60px;
+  margin-left: 60px;
+  font-size: 14px;
+}
+.body-container .highlighted-project .info-container button {
+  display: flex;
+  position: absolute;
+  top: 280px;
+  left: 75px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(219, 219, 219, 0.123);
+  color: white;
+  transition: background-color 0.7s, color 0.7s;
+}
+.body-container .highlighted-project .info-container button:hover {
+  background-color: white;
+  color: black;
 }
