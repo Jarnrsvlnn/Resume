@@ -29,7 +29,6 @@ body {
   z-index: 999;
   background-color: black;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between; /* Space between name and navigation */
   margin-left: 200px;
   margin-right: 200px;
@@ -42,6 +41,9 @@ body {
   border-radius: 0px 0px 15px 15px;
 }
 
+.upper-container .nav-links {
+  display: flex;
+}
 .upper-container h2 {
   margin-bottom: 7px;
 }
@@ -58,10 +60,25 @@ body {
   margin-bottom: 7px;
 }
 
-.upper-container .navigation ul li a {
+.upper-container .navigation .nav-links li a {
   color: rgb(95, 95, 95); /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
   transition: color 0.1s;
+  position: relative;
+  top: 75px;
+}
+.upper-container .navigation ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+.upper-container .navigation ul li a:hover:before {
+  width: 100%;
 }
 
 .upper-container .navigation ul li a.active {
@@ -75,7 +92,7 @@ body {
   margin-left: 600px;
   margin-right: 200px;
   height: 3050px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 30px;
   background-color: rgba(128, 128, 128, 0.041);
 }
 @keyframes slideUp {
