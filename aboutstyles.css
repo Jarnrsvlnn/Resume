@@ -213,6 +213,17 @@ body {
   animation: slideUp 1.8s ease forwards;
   animation-delay: 0.8s;
   opacity: 0;
+  background-image: url("pictures/githubpic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1.5s, box-shadow 0.5s;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+}
+
+.body-container .intro-container .profile:hover {
+  background-image: url("pictures/GuweiGif.gif");
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
 
 .body-container .intro-container #intro {
