@@ -71,7 +71,7 @@ body {
 .body-container {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 150px;
   margin-left: 600px;
   margin-right: 200px;
   height: 3050px;
@@ -230,7 +230,7 @@ body {
   position: relative;
   font-weight: bold;
   font-size: 25px;
-  top: 1px;
+  top: -20px;
   left: -420px;
   animation: slideUp 1.8s ease forwards;
   animation-delay: 0.8s;
