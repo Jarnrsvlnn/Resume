@@ -12,7 +12,7 @@ body {
   font-family: "Roboto Mono";
 }
 body {
-  background-image: url("pictures/moon.gif");
+  background-color: black;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -24,28 +24,26 @@ body {
 
 .upper-container {
   position: fixed;
-  width: 1400px;
+  display: flex;
+  width: 100%;
   top: 0;
   z-index: 999;
-  background-color: black;
-  display: flex;
-  justify-content: space-between; /* Space between name and navigation */
-  margin-left: 200px;
-  margin-right: 200px;
   height: 100px;
-  padding-left: 70px;
-  padding-right: 60px;
-  opacity: 0.9;
-  backdrop-filter: blur(8px);
-  box-shadow: 1px 3px 15px white;
-  border-radius: 0px 0px 15px 15px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.685);
 }
 
 .upper-container .nav-links {
   display: flex;
 }
 .upper-container h2 {
+  position: relative;
+  display: flex;
+  top: 30px;
   margin-bottom: 7px;
+  left: 310px;
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 .upper-container .navigation ul {
@@ -61,11 +59,13 @@ body {
 }
 
 .upper-container .navigation .nav-links li a {
-  color: rgb(95, 95, 95); /* Makes link text white */
+  color: rgb(133, 133, 133); /* Makes link text white */
   text-decoration: none; /* Removes underline from links */
   transition: color 0.1s;
   position: relative;
-  top: 75px;
+  top: 60px;
+  right: 310px;
+  font-weight: 600;
 }
 .upper-container .navigation ul li a:before {
   content: "";
