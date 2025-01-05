@@ -72,7 +72,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 1px;
+  height: 2px;
   width: 0%;
   background-color: white;
   transition: width 0.4s ease;
@@ -138,7 +138,7 @@ body {
   height: 350px;
   border-radius: 20px;
   transition: top 0.4s;
-  animation: slideFadeUp 2.8s ease forwards;
+  animation: slideFadeUp 1.4s ease-out forwards;
   animation-delay: 0.9s;
   opacity: 0;
 }
@@ -206,7 +206,6 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.123);
   color: white;
-  transition: background-color 0.7s, color 0.7s;
 }
 .body-container .highlighted-project .info-container button::after {
   content: "View Project"; /* Default text */
