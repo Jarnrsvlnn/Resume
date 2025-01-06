@@ -33,39 +33,17 @@ body {
   background-color: rgba(0, 0, 0, 0.685);
   margin: 0 auto;
 }
-/*mobile */
-@media screen and (max-width: 599px) {
-  .upper-container h2 {
-    font-size: 15px;
-    transform: translateX(-260px);
-  }
-  .upper-container .navigation ul li a {
-    display: block;
-    font-size: 10px;
-    display: none;
-  }
-}
-/* for-tablet-portrait-up */
-@media (min-width: 600px) { 
 
+.upper-container .navigation .checkbtn i {
+  font-size: 30px;
+  color: white;
+  float: right;
+  cursor: pointer;
+  display: none;
 }
-/* for-tablet-landscape-up */
-@media (min-width: 900px) { 
-
+.upper-container .navigation input {
+  display: none;
 }
-/* for-desktop-up */
-@media (min-width: 1200px) { 
-
-}
-/* for-medium-desktop-up */
-@media (min-width: 1400px) { 
-
-}
-/* for-big-desktop-up */
-@media (min-width: 1800px) {
-
-}
-
 
 .upper-container .nav-links {
   display: flex;
