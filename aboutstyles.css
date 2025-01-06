@@ -34,17 +34,6 @@ body {
   margin: 0 auto;
 }
 
-.upper-container .navigation .checkbtn i {
-  font-size: 30px;
-  color: white;
-  float: right;
-  cursor: pointer;
-  display: none;
-}
-.upper-container .navigation input {
-  display: none;
-}
-
 .upper-container .nav-links {
   display: flex;
 }
