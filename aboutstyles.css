@@ -130,6 +130,7 @@ body {
 }
 
 .body-container .sidebar-about ul li a {
+  position: relative;
   list-style-type: none;
   text-decoration: none;
   padding-bottom: 15px;
@@ -138,11 +139,12 @@ body {
   animation: fadeInLeft 2s ease-out forwards;
   animation-delay: 0.7s;
   opacity: 0;
-  transition: font-size 0.5s;
+  transition: left 1s, font-size 0.5s;
 }
 
 .body-container .sidebar-about ul li a:hover {
-  font-size: 23px;
+  left: 5px;
+  font-size: 21px;
 }
 
 .body-container .sidebar-about ul li {
@@ -365,110 +367,70 @@ body {
   opacity: 0;
 }
 
-.body-container .intro-container .interests .gaming {
+.body-container .intro-container .interests .wrapper {
   position: relative;
-  display: flex;
-  width: 120px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
-  border-radius: 30px;
-  transform: translateY(140px);
-  left: 100px;
-  justify-content: center;
-  align-items: center;
-  transition: width 0.5s, height 0.5s;
+  width: 90%;
+  height: 100px; /* Increased to match image height */
+  max-width: 1536px;
+  margin-top: 5rem;
+  margin-inline: auto;
+  overflow: hidden;
+  display: flex; /* Flexbox for horizontal alignment */
+  mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+  );
 }
-.body-container .intro-container .interests .gaming:hover {
-  width: 130px;
-  height: 130px;
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
 }
-.body-container .intro-container .interests .music {
-  position: relative;
-  width: 120px;
-  display: flex;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
-  border-radius: 30px;
-  transform: translateY(140px);
-  left: 130px;
-  justify-content: center;
-  align-items: center;
-  transition: width 0.5s, height 0.5s;
-}
-.body-container .intro-container .interests .music:hover {
-  width: 130px;
-  height: 130px;
-}
-.body-container .intro-container .interests .manga {
-  position: relative;
-  width: 120px;
-  display: flex;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 3px 10px white;
-  border-radius: 30px;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(140px);
-  left: 160px;
-  transition: width 0.5s, height 0.5s;
-}
-.body-container .intro-container .interests .manga:hover {
-  width: 130px;
-  height: 130px;
-}
-.body-container .intro-container .interests .gaming img {
-  position: relative;
-  display: flex;
+.body-container .intro-container .interests .wrapper .item {
   width: 100px;
-  height: 90px;
-  top: 3px;
-  left: 29px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  left: 100%;
+  animation-name: scrollLeft;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
-.body-container .intro-container .interests .music img {
-  position: relative;
-  width: 60px;
-  display: flex;
-  height: 60px;
-  left: 31px;
-  top: 3px;
-}
-.body-container .intro-container .interests .manga img {
-  position: relative;
-  width: 150px;
-  display: flex;
-  height: 150px;
-  top: 3px;
-  left: 22px;
+.body-container .intro-container .interests .wrapper .item1 img {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
 
-.body-container .intro-container .interests .gaming p {
-  position: relative;
-  display: flex;
-  width: 100px;
-  height: 90px;
-  top: 110px;
-  transform: translateX(-50px);
-}
-.body-container .intro-container .interests .music p {
-  position: relative;
-  width: 60px;
-  display: flex;
-  height: 60px;
-  top: 95px;
-  transform: translateX(-20px);
-}
-.body-container .intro-container .interests .manga p {
-  position: relative;
-  width: 150px;
-  display: flex;
-  height: 150px;
-  top: 140px;
-  transform: translateX(-75px);
+.body-container .intro-container .interests .wrapper .item2 img {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
 }
 
+.body-container .intro-container .interests .wrapper .item3 img {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.body-container .intro-container .interests .wrapper .item4 img {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.body-container .intro-container .interests .wrapper .item5 img {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.body-container .intro-container .interests .wrapper .item6 img {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.body-container .intro-container .interests .wrapper .item7 img {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.body-container .intro-container .interests .wrapper .item8 img {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
 /*skills*/
 
 .skills-container {
@@ -513,7 +475,7 @@ body {
 .skills-container .programming:hover {
   width: 515px;
   height: 555px;
-  border: rgb(107, 107, 107) 1px solid;
+  border: rgb(255, 255, 255) 1px solid;
 }
 .skills-container .programming h3 {
   text-align: center;
@@ -650,7 +612,7 @@ body {
 .skills-container .graphic:hover {
   width: 550px;
   height: 560px;
-  border: rgb(107, 107, 107) 1px solid;
+  border: rgb(255, 255, 255) 1px solid;
 }
 
 /*education*/
